@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="VUE知识点总结," />
+  <meta name="keywords" content="coding," />
 
 
 
@@ -80,14 +80,14 @@
 
 
 <meta name="description" content="==vue.js 轻量级的MVVM框架 数据驱动+组件化的开发基本指令1v-if是条件渲染指令，它根据表达式的真假来删除和插入元素，它的基本语法如下：v-if=”expression” 2v-show根据表达式的真假来删除和插入元素     v-if=”expression” 3可以用v-else指令为v-if或v-show添加一个“else块”。v-else元素必须立即跟在v-if或v-show">
-<meta name="keywords" content="VUE知识点总结">
+<meta name="keywords" content="coding">
 <meta property="og:type" content="article">
 <meta property="og:title" content="VUE">
 <meta property="og:url" content="yancyxiao.cn/2017/11/15/vue/index.html">
 <meta property="og:site_name" content="Jiangyx">
 <meta property="og:description" content="==vue.js 轻量级的MVVM框架 数据驱动+组件化的开发基本指令1v-if是条件渲染指令，它根据表达式的真假来删除和插入元素，它的基本语法如下：v-if=”expression” 2v-show根据表达式的真假来删除和插入元素     v-if=”expression” 3可以用v-else指令为v-if或v-show添加一个“else块”。v-else元素必须立即跟在v-if或v-show">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-11-16T11:25:04.470Z">
+<meta property="og:updated_time" content="2017-12-06T01:59:03.202Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="VUE">
 <meta name="twitter:description" content="==vue.js 轻量级的MVVM框架 数据驱动+组件化的开发基本指令1v-if是条件渲染指令，它根据表达式的真假来删除和插入元素，它的基本语法如下：v-if=”expression” 2v-show根据表达式的真假来删除和插入元素     v-if=”expression” 3可以用v-else指令为v-if或v-show添加一个“else块”。v-else元素必须立即跟在v-if或v-show">
@@ -273,6 +273,39 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web/" itemprop="url" rel="index">
+                    <span itemprop="name">web</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web/vue/" itemprop="url" rel="index">
+                    <span itemprop="name">vue</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -309,14 +342,14 @@
 <h1 id="数据驱动-组件化的开发"><a href="#数据驱动-组件化的开发" class="headerlink" title="数据驱动+组件化的开发"></a>数据驱动+组件化的开发</h1><h2 id="基本指令"><a href="#基本指令" class="headerlink" title="基本指令"></a>基本指令</h2><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p>v-if是条件渲染指令，它根据表达式的真假来删除和插入元素，它的基本语法如下：<br>v-if=”expression”</p>
 <h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p>v-show根据表达式的真假来删除和插入元素<br>     v-if=”expression”</p>
 <h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><p>可以用v-else指令为v-if或v-show添加一个“else块”。<br>v-else元素必须立即跟在v-if或v-show元素的后面——否则它不能被识别。<br>v-if和v-else连用时，不执行else时，else里面的HTML不渲染<br>v-if和v-show连用时，不执行else时，else里面的HTML渲染，只是display：none隐藏了</p>
-<h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><p>v-for=”item in items”  items是一个数组，item是当前被遍历的数组元素。<br>总是key配合v-for使用<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">    &lt;li v-for=&quot;todo in todos&quot; :key=&quot;todo.id&quot;&gt;</span><br><span class="line">        &#123;&#123; todo.text &#125;&#125;</span><br><span class="line">    &lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure></p>
+<h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><p>v-for=”item in items”  items是一个数组，item是当前被遍历的数组元素。<br>总是key配合v-for使用<br><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">"todo in todos"</span> <span class="attr">:key</span>=<span class="string">"todo.id"</span>&gt;</span></span></span><br><span class="line"><span class="xml">        </span><span class="template-variable">&#123;&#123; todo.text &#125;&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>
 <h3 id="5"><a href="#5" class="headerlink" title="5"></a>5</h3><p>v-bind 指令可以在其名称后面带一个参数，中间放一个冒号隔开，这个参数通常是HTML元素的<br>特性（attribute–专门用来绑定属性），例如：<code>v-bind:width=&quot;&quot;</code><br><code>v-bind:argument=&quot;expression&quot;</code><br>     简写形式如下：<br><code>:argument=&quot;expression&quot;</code></p>
 <p>另外可以绑定类名<br>用法1：<br>     <code>:class=&quot;[className1,className2,className3]&quot;</code>其中，className1、2、3是数据  放在data中的<br>用法2：<br>     <code>:class=&quot;{className1:true,className2:false}&quot;</code>其中，className1、2是真正的类名<br>用法3：<br>    <code>:class=&quot;json&quot;</code> json是data里面的json<br>可以绑定style<br>     <code>:style=&quot;[c]&quot;</code> c是json形式的数据<br>     <code>:style=&quot;[c,d]&quot;</code>c和d都是json形式的数据，多个样式的写法<br>     <code>:style=&quot;json&quot;</code> json是data中的数据</p>
 <h3 id="6"><a href="#6" class="headerlink" title="6"></a>6</h3><p>v-on指令用于给监听DOM事件，它的用语法和v-bind是类似的，例如监听<code>&lt;a&gt;</code>元素的点击事件：<br><code>&lt;a v-on:click=&quot;doSomething&quot;&gt;</code><br>v-on 有简写形式，如下：<br><code>&lt;a @click=&quot;doSomething&quot;&gt;</code></p>
-<h3 id="7-模板"><a href="#7-模板" class="headerlink" title="7.模板"></a>7.模板</h3>数据更新模板变化–&gt;v-text=”msg”   后面的方法可以防止闪烁<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;*msg&#125;&#125;</span><br></pre></td></tr></table></figure>
-<p>数据只绑定一次<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;&#123;msg&#125;&#125;&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="7-模板"><a href="#7-模板" class="headerlink" title="7.模板"></a>7.模板</h3>数据更新模板变化–&gt;v-text=”msg”   后面的方法可以防止闪烁<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;*msg&#125;&#125;</span><br></pre></td></tr></table></figure>
+<p>数据只绑定一次<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;&#123;msg&#125;&#125;&#125;</span><br></pre></td></tr></table></figure></p>
 <p>将HTML转译输出–&gt;v-html=”msg”  后面的方法可以防止闪烁，前面的方法v2.0已经删掉了</p>
-<h3 id="8-过滤器"><a href="#8-过滤器" class="headerlink" title="8.过滤器"></a>8.过滤器</h3><p>过滤模板数据  系统提供一些过滤器:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;msg| filterA&#125;&#125;</span><br><span class="line">&#123;&#123;msg| filterA | filterB&#125;&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="8-过滤器"><a href="#8-过滤器" class="headerlink" title="8.过滤器"></a>8.过滤器</h3><p>过滤模板数据  系统提供一些过滤器:<br><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;msg| filterA&#125;&#125;</span><br><span class="line">&#123;&#123;msg| filterA | filterB&#125;&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -334,7 +367,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/VUE知识点总结/" rel="tag"># VUE知识点总结</a>
+            <a href="/tags/coding/" rel="tag"># coding</a>
           
         </div>
       
@@ -451,12 +484,21 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
             
 
             
@@ -464,7 +506,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
