@@ -232,6 +232,160 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="yancyxiao.cn/2017/12/20/好用的js代码片段/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="姜云肖">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Jiangyx">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/12/20/好用的js代码片段/" itemprop="url">好用的js代码片段</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-20T09:36:50+08:00">
+                2017-12-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web/" itemprop="url" rel="index">
+                    <span itemprop="name">web</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web/js/" itemprop="url" rel="index">
+                    <span itemprop="name">js</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>1、求数组最大值、最小值<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arrayMax = <span class="function"><span class="params">arr</span> =&gt;</span> <span class="built_in">Math</span>.max(...arr);</span><br><span class="line"><span class="comment">//arrayMax([10,1,5])  返回10</span></span><br></pre></td></tr></table></figure></p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> arrayMin = <span class="function"><span class="params">arr</span> =&gt;</span> <span class="built_in">Math</span>.min(...arr);</span><br><span class="line"><span class="comment">//arrayMin([10,1,5])  返回1</span></span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="yancyxiao.cn/2017/12/19/underscore源码解析/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -393,6 +547,39 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web/" itemprop="url" rel="index">
+                    <span itemprop="name">web</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/web/工具/" itemprop="url" rel="index">
+                    <span itemprop="name">工具</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -422,7 +609,8 @@
       
         
           
-            
+            <p><a href="https://mp.weixin.qq.com/s/VRNZVUfQ5xcj4QTceUEWrw" target="_blank" rel="external">原文链接</a></p>
+
           
         
       
@@ -607,7 +795,7 @@
 <p>享元模式顾名思义，共享一些单元，用于优化重复、缓慢及数据共享效率较低的代码</p>
 </blockquote>
 <p>应用：一是用于数据层，处理内存中保存的大量相似对象的共享数据，二是用于 DOM 层，事件代理<br>在享元模式中，有个有关两个状态的概念 - 内部和外部<br>内部状态存储于对象内部，可以被一些对象共享，独立于具体的场景，通常不会变<br>外部状态根据场景而变化<br>剥离了外部状态的对象成为共享对象，外部状态在必要时被传入共享对象来组成一个完整的对象<br>使用享元模式的几个步骤：<br>以书中文件上传的例子描述<br>1.剥离外部状态<br><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Upload</span> </span>&#123;</span><br><span class="line">    <span class="keyword">constructor</span>(type) &#123;</span><br><span class="line">        <span class="keyword">this</span>.uploadType = type</span><br><span class="line">    &#125;</span><br><span class="line">    delFile(id) &#123;</span><br><span class="line">        uploadManager.setExternalState(id, <span class="keyword">this</span>) <span class="comment">//这里就是组装外部状态来使共享对象变成一个具体的对象</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">this</span>.fileSize &lt; <span class="number">3000</span>) &#123;</span><br><span class="line">            <span class="comment">//直接删除</span></span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//弹窗询问确认删除？</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>2.使用工厂进行对象实例化<br><figure class="highlight actionscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> UploadFactory = (<span class="function"><span class="keyword">function</span><span class="params">()</span> </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> flyWeightObjs = &#123;&#125;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        create(uploadType) &#123;</span><br><span class="line">            <span class="keyword">if</span> (flyWeightObjs[uploadType]) &#123;</span><br><span class="line">                <span class="keyword">return</span> flyWeightObjs[uploadType]</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> flyWeightObjs[uploadType] = <span class="keyword">new</span> Upload(uoloadType)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)()</span><br></pre></td></tr></table></figure></p>
+<p>2.使用工厂进行对象实例化<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> UploadFactory = (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">const</span> flyWeightObjs = &#123;&#125;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        create(uploadType) &#123;</span><br><span class="line">            <span class="keyword">if</span> (flyWeightObjs[uploadType]) &#123;</span><br><span class="line">                <span class="keyword">return</span> flyWeightObjs[uploadType]</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> flyWeightObjs[uploadType] = <span class="keyword">new</span> Upload(uoloadType)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)()</span><br></pre></td></tr></table></figure></p>
 <p>3.使用管理器封装外部状态<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> uploadManager = (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> uploadDatabase = &#123;&#125;</span><br><span class="line">    <span class="keyword">return</span> &#123;</span><br><span class="line">        add(id, uploadType, fileSize, fileName) &#123;</span><br><span class="line">            <span class="keyword">var</span> flyWeightObj = UploadFactory.create(uploadType) <span class="comment">//那个被共享的对象</span></span><br><span class="line">            <span class="comment">//创建结点...</span></span><br><span class="line">            <span class="comment">//删除操作</span></span><br><span class="line">            dom.onclick = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">                flyWeightObj.delFile(id) <span class="comment">//这个共享在步骤1中会被组合，可以看到，只有在删除操作的时候，我们才需要那些外部状态</span></span><br><span class="line">            &#125;</span><br><span class="line">            uploadDatabase[id] = &#123;</span><br><span class="line">                fileName,</span><br><span class="line">                fileSize,</span><br><span class="line">                dom</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> flyWeightObj</span><br><span class="line">        &#125;，</span><br><span class="line">        setExternalState(id, flyWeight) &#123;</span><br><span class="line">            <span class="keyword">var</span> externalState = uploadDatabase[id]</span><br><span class="line">            <span class="built_in">Object</span>.assign(flyWeight, externalState)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;)()</span><br></pre></td></tr></table></figure></p>
 <h3 id="责任链模式"><a href="#责任链模式" class="headerlink" title="责任链模式"></a>责任链模式</h3><blockquote>
 <p>将一个请求以此传递给多个函数，若请求符合当前函数要求，则当前函数处理，否则，传给下一个</p>
@@ -1253,14 +1441,14 @@
         
           
             <blockquote>
-<p>ES6项目构建<br><img src="img/es6_01.png" alt=""></p>
+<p>ES6项目构建<br><img src="/14/es6/es6_01.png" alt=""></p>
 </blockquote>
 <h2 id="let和const命令"><a href="#let和const命令" class="headerlink" title="let和const命令"></a>let和const命令</h2><h3 id="let命令"><a href="#let命令" class="headerlink" title="let命令"></a>let命令</h3><p>let声明<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  let a=10;//let声明的变量只在它所在的代码块有效</span><br><span class="line">  var b=1;</span><br><span class="line">&#125;</span><br><span class="line">console.log(b);</span><br><span class="line">// console.log(a);//报错</span><br></pre></td></tr></table></figure></p>
 <p>let应用</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;<span class="number">10</span>;i++)&#123;&#125;</span><br><span class="line"><span class="comment">//console.log(i);//i不能在外面引用</span></span><br><span class="line"><span class="keyword">var</span> a = [];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">  a[i] = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(i);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line">a[<span class="number">6</span>]();</span><br><span class="line"><span class="comment">//如果是var声明，则会输出10；如果是let声明，则会输出6</span></span><br><span class="line"><span class="comment">//let声明中，每次循环的i其实都是一个新的变量</span></span><br></pre></td></tr></table></figure>
 <p>let不支持变量提升</p>
 <p>只要块级作用域内存在let命令，它所声明的变量就“绑定”了这块区域，不再受外部的影响</p>
-<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> temp=<span class="number">123</span>;</span><br><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">  temp=<span class="string">'abc'</span>;<span class="comment">//会报错，因为下面的let声明了temp，所以这里的temp和外面的就没有关系了，</span></span><br><span class="line">             <span class="comment">//但是此处的赋值在声明之前，还没有声明就赋值会报错</span></span><br><span class="line">  <span class="keyword">let</span> temp;</span><br><span class="line">  <span class="comment">/*ES6明确规定，如果区块中存在let和const命令，这个区块对这些命令声明的变量，从一开始就形成了封闭作用域。凡是在声明之前就使用这些变量，就会报错。*/</span></span><br><span class="line">  <span class="comment">//称为暂时性死区</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">typeof</span> x; <span class="comment">// 报错</span></span><br><span class="line"><span class="keyword">let</span> x;</span><br><span class="line"><span class="comment">//let不予许重复声明</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> temp=<span class="number">123</span>;</span><br><span class="line"><span class="keyword">if</span>(<span class="literal">true</span>)&#123;</span><br><span class="line">  temp=<span class="string">'abc'</span>;<span class="comment">//会报错，因为下面的let声明了temp，所以这里的temp和外面的就没有关系了，</span></span><br><span class="line">             <span class="comment">//但是此处的赋值在声明之前，还没有声明就赋值会报错</span></span><br><span class="line">  <span class="keyword">let</span> temp;</span><br><span class="line">  <span class="comment">/*ES6明确规定，如果区块中存在let和const命令，这个区块对这些命令声明的变量，从一开始就形成了封闭作用域。凡是在声明之前就使用这些变量，就会报错。*/</span></span><br><span class="line">  <span class="comment">//称为暂时性死区</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">typeof</span> x; <span class="comment">// 报错</span></span><br><span class="line"><span class="keyword">let</span> x;</span><br><span class="line"><span class="comment">//let不予许重复声明</span></span><br></pre></td></tr></table></figure>
 <h4 id="块级作用域"><a href="#块级作用域" class="headerlink" title="块级作用域"></a>块级作用域</h4><p>外层作用域无法读取内层作用域的变量</p>
 <figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;&#123;&#123;</span><br><span class="line">  &#123;let insane = 'Hello World'&#125;</span><br><span class="line">  console.log(<span class="name">insane</span>)<span class="comment">; // 报错</span></span><br><span class="line">&#125;&#125;&#125;&#125;<span class="comment">;</span></span><br></pre></td></tr></table></figure>
 <p>内层作用域可以定义外层作用域的同名变量</p>
@@ -1299,7 +1487,7 @@
 <p>事实上，只要某种数据结构具有 Iterator 接口，都可以采用数组形式的解构赋值。</p>
 <figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">function* fibs() &#123;</span><br><span class="line">	<span class="built_in">let</span> a = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">let</span> b = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">    	yield a;</span><br><span class="line">        [a, b] = [b, a + b];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">let</span> [<span class="built_in">first</span>, <span class="built_in">second</span>, <span class="built_in">third</span>, <span class="built_in">fourth</span>, <span class="built_in">fifth</span>, <span class="built_in">sixth</span>] = fibs();</span><br><span class="line"><span class="built_in">sixth</span> // <span class="number">5</span></span><br></pre></td></tr></table></figure>
 <h4 id="默认值"><a href="#默认值" class="headerlink" title="默认值"></a>默认值</h4><p>解构赋值允许指定默认值</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">let</span> [foo = <span class="literal">true</span>] = [];</span><br><span class="line">foo // <span class="literal">true</span></span><br><span class="line"><span class="built_in">let</span> [x, y = <span class="string">'b'</span>] = [<span class="string">'a'</span>]; // x=<span class="string">'a'</span>, y=<span class="string">'b'</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [foo = <span class="literal">true</span>] = [];</span><br><span class="line">foo <span class="comment">// true</span></span><br><span class="line"><span class="keyword">let</span> [x, y = <span class="string">'b'</span>] = [<span class="string">'a'</span>]; <span class="comment">// x='a', y='b'</span></span><br></pre></td></tr></table></figure>
 <p>ES6 内部使用严格相等运算符（===），判断一个位置是否有值。所以，如果一个数组成员不严格等于undefined，默认值是不会生效的。<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [x = <span class="number">1</span>] = [<span class="literal">undefined</span>];</span><br><span class="line">x <span class="comment">// 1</span></span><br><span class="line"><span class="keyword">let</span> [x = <span class="number">1</span>] = [<span class="literal">null</span>];</span><br><span class="line">x <span class="comment">// null</span></span><br></pre></td></tr></table></figure></p>
 <p>如果一个数组成员是null，默认值就不会生效，因为null不严格等于undefined。<br>==惰性求值==：即只有在用到的时候才会求值<br>默认值可以引用解构赋值的其他变量，但该变量必须已经声明<br><figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> [<span class="attr">x</span> = <span class="number">1</span>, <span class="attr">y</span> = x] = [];     // <span class="attr">x=1;</span> <span class="attr">y=1</span></span><br><span class="line"><span class="keyword">let</span> [<span class="attr">x</span> = <span class="number">1</span>, <span class="attr">y</span> = x] = [<span class="number">1</span>, <span class="number">2</span>]; // <span class="attr">x=1;</span> <span class="attr">y=2</span></span><br><span class="line"><span class="keyword">let</span> [<span class="attr">x</span> = y, <span class="attr">y</span> = <span class="number">1</span>] = [];     // ReferenceError</span><br></pre></td></tr></table></figure></p>
 <h3 id="对象的解构赋值"><a href="#对象的解构赋值" class="headerlink" title="对象的解构赋值"></a>对象的解构赋值</h3><p>数组的解构赋值是有顺序的，但是对象的解构赋值是无需的，变量名和属性同名才能获取到正确的值。<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">let &#123; <span class="string">bar:</span> bar, <span class="string">foo:</span> foo &#125; = &#123; <span class="string">foo:</span> <span class="string">"aaa"</span>, <span class="string">bar:</span> <span class="string">"bbb"</span>&#125;;</span><br><span class="line"><span class="comment">// 可以简写为</span></span><br><span class="line">let &#123; bar, foo &#125; = &#123; <span class="string">foo:</span> <span class="string">"aaa"</span>, <span class="string">bar:</span> <span class="string">"bbb"</span>&#125;;</span><br><span class="line">foo <span class="comment">// "aaa"</span></span><br><span class="line">bar <span class="comment">// "bbb"</span></span><br><span class="line">let &#123;<span class="string">foo:</span> xiao , baz &#125; = &#123; <span class="string">foo:</span> <span class="string">"aaa"</span>, <span class="string">bar:</span> <span class="string">"bbb"</span>&#125;;</span><br><span class="line">baz <span class="comment">// undefined</span></span><br><span class="line">xiao <span class="comment">// "aaa"</span></span><br><span class="line"><span class="comment">//真正被赋值的是后者</span></span><br><span class="line">foo <span class="comment">// error : foo is not defined</span></span><br><span class="line"></span><br><span class="line">let obj = &#123; <span class="string">first:</span> <span class="string">'hello'</span>, <span class="string">last:</span> <span class="string">'world'</span> &#125;;</span><br><span class="line">let &#123; <span class="string">first:</span> f, <span class="string">last:</span> <span class="number">1</span> &#125; = obj;</span><br><span class="line">f <span class="comment">// 'hello'</span></span><br><span class="line">l <span class="comment">// 'world'</span></span><br></pre></td></tr></table></figure></p>
@@ -1320,7 +1508,7 @@
 <p>3.赋值语句模式<br><figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 全部报错</span></span><br><span class="line"><span class="comment">(&#123; p: a &#125;)</span> = &#123; p: <span class="number">42</span> &#125;;</span><br><span class="line"><span class="comment">([a])</span> = [<span class="number">5</span>];</span><br><span class="line"></span><br><span class="line"><span class="comment">// 报错</span></span><br><span class="line">[<span class="comment">(&#123; p: a &#125;)</span>, &#123; x: c &#125;] = [&#123;&#125;, &#123;&#125;];</span><br></pre></td></tr></table></figure></p>
 <h4 id="可以使用圆括号的情况"><a href="#可以使用圆括号的情况" class="headerlink" title="可以使用圆括号的情况"></a>可以使用圆括号的情况</h4><p>只有一种：赋值语句的非模式部分，可以使用圆括号<br><figure class="highlight gcode"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[<span class="comment">(b)</span>] = [<span class="number">3</span>]; <span class="comment">// 正确</span></span><br><span class="line"><span class="comment">(&#123; p: (d)</span> &#125; = &#123;&#125;); <span class="comment">// 正确</span></span><br><span class="line">[<span class="comment">(parseInt.prop)</span>] = [<span class="number">3</span>]; <span class="comment">// 正确</span></span><br></pre></td></tr></table></figure></p>
 <h3 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h3><p>1.交换变量的值<br><figure class="highlight nix"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> <span class="attr">x</span> = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">let</span> <span class="attr">y</span> =<span class="number">2</span>;</span><br><span class="line">[x, y] = [y, x];</span><br></pre></td></tr></table></figure></p>
-<p>2.从函数返回多个值<br>直接取值就可以<br><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title">example</span>() &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="type">&#123;</span></span><br><span class="line">    foo: <span class="number">1</span>,</span><br><span class="line">    bar: <span class="number">2</span></span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line">let &#123; foo, bar &#125; = example();</span><br></pre></td></tr></table></figure></p>
+<p>2.从函数返回多个值<br>直接取值就可以<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">example</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    foo: <span class="number">1</span>,</span><br><span class="line">    bar: <span class="number">2</span></span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> &#123; foo, bar &#125; = example();</span><br></pre></td></tr></table></figure></p>
 <p>3.函数参数的定义<br>4.提取JSON数据<br><figure class="highlight fortran"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">let jsonData = &#123;</span><br><span class="line">  id: <span class="number">42</span>,</span><br><span class="line">  <span class="keyword">status</span>: <span class="string">"OK"</span>,</span><br><span class="line">  <span class="keyword">data</span>: [<span class="number">867</span>, <span class="number">5309</span>]</span><br><span class="line">&#125;;</span><br><span class="line">let &#123; id, <span class="keyword">status</span>, <span class="keyword">data</span>: <span class="keyword">number</span> &#125; = jsonData;</span><br><span class="line">console.<span class="built_in">log</span>(id, <span class="keyword">status</span>, <span class="keyword">number</span>);</span><br><span class="line">// <span class="number">42</span>, <span class="string">"OK"</span>, [<span class="number">867</span>, <span class="number">5309</span>]</span><br></pre></td></tr></table></figure></p>
 <p>5.函数参数的默认值<br><figure class="highlight haxe"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">jQuery.ajax = <span class="function"><span class="keyword">function</span> </span>(url, &#123;</span><br><span class="line">  async = <span class="literal">true</span>,</span><br><span class="line">  beforeSend = <span class="function"><span class="keyword">function</span> </span>() &#123;&#125;,</span><br><span class="line">  cache = <span class="literal">true</span>,</span><br><span class="line">  complete = <span class="function"><span class="keyword">function</span> </span>() &#123;&#125;,</span><br><span class="line">  crossDomain = <span class="literal">false</span>,</span><br><span class="line">  global = <span class="literal">true</span>,</span><br><span class="line">  <span class="comment">// ... more config</span></span><br><span class="line">&#125;) &#123;</span><br><span class="line">  <span class="comment">// ... do stuff</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
 <p>指定参数的默认值，就避免了在函数体内部再写var foo = config.foo || ‘default foo’;这样的语句<br>6.遍历Map结构<br><figure class="highlight processing"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="built_in">map</span> = <span class="keyword">new</span> Map();</span><br><span class="line"><span class="built_in">map</span>.<span class="built_in">set</span>(<span class="string">'first'</span>, <span class="string">'hello'</span>);</span><br><span class="line"><span class="built_in">map</span>.<span class="built_in">set</span>(<span class="string">'second'</span>, <span class="string">'world'</span>);</span><br><span class="line"><span class="keyword">for</span> (let [<span class="built_in">key</span>, value] of <span class="built_in">map</span>) &#123;</span><br><span class="line">  console.<span class="built_in">log</span>(<span class="built_in">key</span> + <span class="string">" is "</span> + value);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// first is hello</span></span><br><span class="line"><span class="comment">// second is world</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//如果只想获取键名，或者只想获取键值，可以写成下面这样。</span></span><br><span class="line"><span class="comment">// 获取键名</span></span><br><span class="line"><span class="keyword">for</span> (let [<span class="built_in">key</span>] of <span class="built_in">map</span>) &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 获取键值</span></span><br><span class="line"><span class="keyword">for</span> (let [,value] of <span class="built_in">map</span>) &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
@@ -1411,7 +1599,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
