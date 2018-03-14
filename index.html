@@ -134,7 +134,7 @@
 
 
 
-</head>
+<link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"></script></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
 
@@ -303,7 +303,18 @@
       
         
           
-            
+            <h3 id="同源策略和跨域"><a href="#同源策略和跨域" class="headerlink" title="同源策略和跨域"></a>同源策略和跨域</h3><h4 id="浏览器的同源策略"><a href="#浏览器的同源策略" class="headerlink" title="浏览器的同源策略"></a>浏览器的同源策略</h4><p><a href="https://www.jianshu.com/p/2b9db9d0a63d" target="_blank" rel="external">原文地址</a></p>
+<ul>
+<li>端口相同</li>
+<li>域名相同</li>
+<li>协议相同<br>非同源的话会出现的限制：</li>
+</ul>
+<ol>
+<li>cookie、localStorage和indexDB无法读取</li>
+<li>dom无法获取</li>
+<li>ajax请求<h5 id="cookie"><a href="#cookie" class="headerlink" title="cookie"></a>cookie</h5>window.domain设置统一父域名</li>
+</ol>
+
           
         
       
@@ -1396,7 +1407,8 @@
         
           
             <p>==<br>vue.js 轻量级的MVVM框架</p>
-<h1 id="数据驱动-组件化的开发"><a href="#数据驱动-组件化的开发" class="headerlink" title="数据驱动+组件化的开发"></a>数据驱动+组件化的开发</h1><h2 id="基本指令"><a href="#基本指令" class="headerlink" title="基本指令"></a>基本指令</h2><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p>v-if是条件渲染指令，它根据表达式的真假来删除和插入元素，它的基本语法如下：<br>v-if=”expression”</p>
+<h1 id="数据驱动-组件化的开发"><a href="#数据驱动-组件化的开发" class="headerlink" title="数据驱动+组件化的开发"></a>数据驱动+组件化的开发</h1><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"theme":"#FADFA3","loop":true,"video":{"url":"http://45.112.214.109/6974D370A4B38819A0A57643C4/03000A01005A5363D9CB5F514325B3E6018933-6359-951A-945C-0D482B330E2A.mp4?ccode=0512&duration=344&expire=18000&psid=77c2f5ba225086a26df6b4a379adebdc&ups_client_netip=ac686aa5&ups_ts=1521009387&ups_userid=&utid=gIXoEhXd8mICAWXneD3Bub5S&vid=XMzMwMTYyODMyNA%3D%3D&vkey=Ae0911b1651fb96bcc36ca89021eea3c8","pic":"https://thumbnail0.baidupcs.com/thumbnail/7a7421af735166ba95ba8008f1ae1539?fid=1227565231-250528-893396336592157&time=1521007200&rt=sh&sign=FDTAER-DCb740ccc5511e5e8fedcff06b081203-ZGjJ9o2DMyW%2BKPNeRwrnbXhmq30%3D&expires=8h&chkv=0&chkbd=0&chkpc=&dp-logid=1684234658344716674&dp-callid=0&size=c710_u400&quality=100&vuk=-&ft=video"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+<h2 id="基本指令"><a href="#基本指令" class="headerlink" title="基本指令"></a>基本指令</h2><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p>v-if是条件渲染指令，它根据表达式的真假来删除和插入元素，它的基本语法如下：<br>v-if=”expression”</p>
 <h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p>v-show根据表达式的真假来删除和插入元素<br>     v-if=”expression”</p>
 <h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><p>可以用v-else指令为v-if或v-show添加一个“else块”。<br>v-else元素必须立即跟在v-if或v-show元素的后面——否则它不能被识别。<br>v-if和v-else连用时，不执行else时，else里面的HTML不渲染<br>v-if和v-show连用时，不执行else时，else里面的HTML渲染，只是display：none隐藏了</p>
 <h3 id="4"><a href="#4" class="headerlink" title="4"></a>4</h3><p>v-for=”item in items”  items是一个数组，item是当前被遍历的数组元素。<br>总是key配合v-for使用<br><figure class="highlight django"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="xml"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">"todo in todos"</span> <span class="attr">:key</span>=<span class="string">"todo.id"</span>&gt;</span></span></span><br><span class="line"><span class="xml">        </span><span class="template-variable">&#123;&#123; todo.text &#125;&#125;</span><span class="xml"></span></span><br><span class="line"><span class="xml">    <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br><span class="line"><span class="xml"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>
