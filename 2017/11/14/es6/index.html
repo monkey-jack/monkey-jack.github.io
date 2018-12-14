@@ -364,11 +364,15 @@
 <h3 id="const-命令"><a href="#const-命令" class="headerlink" title="const 命令"></a>const 命令</h3><p>const 声明一个只读的常量。一旦声明，常量的值就不能改变。—所以常量一旦声明就必须立即初始化，不能留到以后赋值<br>const 的作用域与let命令相同：只在声明所在的块级作用域内有效<br>const 命令声明的常量也是不提升，同样存在暂时性死区，只能在声明的位置后面使用。</p>
 <blockquote>
 <p>const实际保证的，并不是变量的值不得改动，而是变量指向的哪个地址不得改动<br>如：const foo={}；<br>foo存的是地址，这个地址指向一个对象，这个对象本身是可变的，故可添加属性foo.prop=123;<br>但是不可把foo指向另一个地址：foo = {}//错误</p>
-<p>————-让对象冻结的方法（不可改变属性）—————<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const <span class="attribute">foo</span>=Object freeze(&#123;&#125;);</span><br><span class="line">foo.<span class="attribute">prop</span>=123;//常规模式下，此行代码不起作用。  严格模式下会报错</span><br></pre></td></tr></table></figure></p>
-<p>————-让对象彻底冻结的方法————————-<br>注：对象的属性有可能还是对象，那么对象的属性就有可能有自己的属性，那么对象的属性也要被冻结</p>
-<p><em>*</em>使用回调函数</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> constantize = <span class="function">(<span class="params">obj</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">Object</span> freeze(obj);</span><br><span class="line">    <span class="built_in">Object</span> keys(obj).forEach(<span class="function">(<span class="params">key,i</span>)=&gt;</span>&#123;</span><br><span class="line">       <span class="keyword">if</span>(<span class="keyword">typeof</span> obj[key]===<span class="string">'object'</span>)&#123;</span><br><span class="line">          constantize(obj[key]);</span><br><span class="line">       &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </blockquote>
+<p>————-让对象冻结的方法（不可改变属性）—————<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const <span class="attribute">foo</span>=Object freeze(&#123;&#125;);</span><br><span class="line">foo.<span class="attribute">prop</span>=123;//常规模式下，此行代码不起作用。  严格模式下会报错</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>————-让对象彻底冻结的方法————————-<br>注：对象的属性有可能还是对象，那么对象的属性就有可能有自己的属性，那么对象的属性也要被冻结</p>
+</blockquote>
+<blockquote>
+<p>***使用回调函数</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> constantize = <span class="function">(<span class="params">obj</span>)=&gt;</span>&#123;</span><br><span class="line">    <span class="built_in">Object</span> freeze(obj);</span><br><span class="line">    <span class="built_in">Object</span> keys(obj).forEach(<span class="function">(<span class="params">key,i</span>)=&gt;</span>&#123;</span><br><span class="line">       <span class="keyword">if</span>(<span class="keyword">typeof</span> obj[key]===<span class="string">'object'</span>)&#123;</span><br><span class="line">          constantize(obj[key]);</span><br><span class="line">       &#125;</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="es6声明变量的6种方法"><a href="#es6声明变量的6种方法" class="headerlink" title="es6声明变量的6种方法"></a>es6声明变量的6种方法</h3><p><code>var  function  let  const  import  class    es5</code>只有前两种</p>
 <h4 id="顶层对象的属性"><a href="#顶层对象的属性" class="headerlink" title="顶层对象的属性"></a>顶层对象的属性</h4><p>顶层对象：window（浏览器环境），global（Node环境）</p>
 <p>window.a=1; 和 a=1； 是一样的，即顶层对象属性和全局变量是一样的</p>
@@ -465,6 +469,10 @@
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/11/12/vue基础知识/" rel="next" title="VUE基础知识">
+                <i class="fa fa-chevron-left"></i> VUE基础知识
+              </a>
             
           </div>
 
